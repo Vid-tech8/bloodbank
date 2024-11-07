@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blood Donation - Give Blood, Save Lives</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* University Name */
+        .university {
+            font-size: 30px;
+            font-weight: bold;
+            color: #8B0000;
+            text-align: left;
+            padding-top: 10px;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #8B0000;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            background-color: #8B0000;
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 9px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            background-color: #8B0000;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            transition: background-color 0.3s;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff4500;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #ff4500;
+        }
+
+        footer .social-icons i {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        footer .social-icons a {
+            color: white;
+        }
+
+        footer .social-icons a:hover {
+            color: #ff4500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .donor-registration form {
+                width: 90%;
+            }
+
+            .contact-form form {
+                width: 90%;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d7d5ec2e5d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="university">
+        <input type="image" src="https://f2.leadsquaredcdn.com/t/itmbu1/content/common/images/ITMBU_LOGO_Quality.png" height="80" width="140">
+        <big>ITM SLS Baroda University Blood Bank</big>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="project1.html">Home</a></li>
+                <li><a href="register as a donor.html">Register as Donor</a></li>
+                <li><a href="requierment for blood.html">Contact for blood requirement</a></li>
+                 <li><a href="know more about blood donation.html">Know more about blood donation</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Give Blood, Save Lives</h1>
+            <p>Every donation can help save a life. Be the reason someone gets a second chance at life!</p>
+            <a href="register as a donor.html" class="btn">Become a Donor</a>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>REACH US</p>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send?phone=919723708751"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:info@example.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://in.linkedin.com/school/itmbu/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/ITMBUOfficial"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/itmbu_university/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@itmslsbarodauniversity"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Blood Donation Initiative. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Handle Donor Registration Form Submission
+        document.getElementById('donorForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission and page reload
+
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const bloodType = document.getElementById('bloodType').value;
+            const contact = document.getElementById('contact').value;
+
+            if (name && age && bloodType && contact) {
+                alert(`Thank you, ${name}!\nYour registration as a blood donor has been received. We will contact you soon.`);
+                document.getElementById('donorForm').reset();
+            } else {
+                alert('Please fill in all fields!');
+            }
+        });
+
+        // Handle Contact Form Submission
+        document.getElementById('contactUsForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const contactName = document.getElementById('contactFullName').value;
+            const contactEmail = document.getElementById('contactEmail').value;
+            const message = document.getElementById('message').value;
+
+            if (contactName && contactEmail && message) {
+                alert(`Thank you for contacting us, ${contactName}!\nWe will get back to you shortly.`);
+                document.getElementById('contactUsForm').reset();
+            } else {
+                alert('Please fill in all fields!');
+            }
+        });
+    </script>
+</body>
+
+</html>
+
+
+    <script>
+        // Handle Donor Registration Form Submission
+        document.getElementById('donorForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission and page reload
+
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const bloodType = document.getElementById('bloodType').value;
+            const contact = document.getElementById('contact').value;
+
+            if (name && age && bloodType && contact) {
+                alert(`Thank you, ${name}!\nYour registration as a blood donor has been received. We will contact you soon.`);
+                document.getElementById('donorForm').reset();
+            } else {
+                alert('Please fill in all fields!');
+            }
+        });
+
+        // Handle Contact Form Submission
+        document.getElementById('contactUsForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const contactName = document.getElementById('contactFullName').value;
+            const contactEmail = document.getElementById('contactEmail').value;
+            const message = document.getElementById('message').value;
+
+            if (contactName && contactEmail && message) {
+                alert(`Thank you for contacting us, ${contactName}!\nWe will get back to you shortly.`);
+                document.getElementById('contactUsForm').reset();
+            } else {
+                alert('Please fill in all fields!');
+            }
+        });
+    </script>
+</body>
+
+</html>

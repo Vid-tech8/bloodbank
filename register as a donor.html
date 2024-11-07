@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blood Donation - Give Blood, Save Lives</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* University Name */
+        .university {
+            font-size: 30px;
+            font-weight: bold;
+            color: #8B0000;
+            text-align: left;
+            padding-top: 10px;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #8B0000;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Donor Registration Section */
+        .donor-registration {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 9px;
+        }
+
+        .donor-registration h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #8B0000;
+        }
+
+        .donor-registration form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f7f7f7;
+            padding: 30px;
+            border-radius: 9px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .donor-registration label {
+            font-size: 1.1rem;
+            color: #8B0000;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .donor-registration input,
+        .donor-registration select,
+        .donor-registration button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 9px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .donor-registration button {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .donor-registration button:hover {
+            background-color: #ff4500;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #ff4500;
+        }
+
+        footer .social-icons i {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        footer .social-icons a {
+            color: white;
+        }
+
+        footer .social-icons a:hover {
+            color: #ff4500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .donor-registration form {
+                width: 90%;
+            }
+
+            .contact-form form {
+                width: 90%;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d7d5ec2e5d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="university">
+        <input type="image" src="https://f2.leadsquaredcdn.com/t/itmbu1/content/common/images/ITMBU_LOGO_Quality.png" height="80" width="140">
+        <big>ITM SLS Baroda University Blood Bank</big>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="project1.html">Home</a></li>
+                <li><a href="register as a donor.html">Register as Donor</a></li>
+                <li><a href="requierment for blood.html">Contact for blood requirement</a></li>
+                 <li><a href="know more about blood donation.html">Know more about blood donation</a></li>
+
+            </ul>
+        </nav>
+    </header>
+     <!-- Donor Registration Section -->
+    <section id="register" class="donor-registration">
+        <h2>Register as a Blood Donor</h2>
+        <form id="donorForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required placeholder="Enter age">
+
+            <label for="bloodType">Blood Type:</label>
+            <select id="bloodType" name="bloodType" required>
+                <option value="">Select Blood Type</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required placeholder="Enter contact no.">
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+      <!-- Footer Section -->
+    <footer>
+        <p>REACH US</p>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send?phone=919723708751"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:info@example.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://in.linkedin.com/school/itmbu/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/ITMBUOfficial"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/itmbu_university/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@itmslsbarodauniversity"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Blood Donation Initiative. All rights reserved.</p>
+    </footer>
+
+    </body>
+    </html>

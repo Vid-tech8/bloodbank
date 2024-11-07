@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blood Donation - Give Blood, Save Lives</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* University Name */
+        .university {
+            font-size: 30px;
+            font-weight: bold;
+            color: #8B0000;
+            text-align: left;
+            padding-top: 10px;
+        }
+
+        /* Navigation Bar */
+        header {
+            background:#FFFFFF;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background:#8B0000;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 20px 0;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff3333;
+}
+
+/* Form Styles */
+.form-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8B0000;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    background:black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+
+    color: white;
+    cursor: pointer;
+}
+
+/* FAQ Styles */
+.faq-container {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-answer {
+    padding-left: 90px;
+}
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #ff4500;
+        }
+
+        footer .social-icons i {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        footer .social-icons a {
+            color: white;
+        }
+
+        footer .social-icons a:hover {
+            color: #ff4500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .donor-registration form {
+                width: 90%;
+            }
+
+            .contact-form form {
+                width: 90%;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d7d5ec2e5d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="university">
+        <input type="image" src="https://f2.leadsquaredcdn.com/t/itmbu1/content/common/images/ITMBU_LOGO_Quality.png" height="80" width="140">
+        <big>ITM SLS Baroda University Blood Bank</big>
+    </div>
+
+    <Navigation Bar>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="project1.html">Home</a></li>
+                <li><a href="register as a donor.html">Register as Donor</a></li>
+                <li><a href="requierment for blood.html">Contact for blood requirement</a></li>
+                 <li><a href="know more about blood donation.html">Know more about blood donation</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <header>
+     <div class="container">
+            <h1>Know More About Blood Donation</h1>
+            <nav>
+                <ul>
+                    <li><a href="#importance">Importance</a></li>
+                    <li><a href="#eligibility">Eligibility</a></li>
+                    <li><a href="#ineligible">Ineligible</a></li>
+                    <li><a href="#donate">How to Donate</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="importance">
+        <div class="container">
+            <h2>The Importance of Blood Donation</h2>
+            <p>Blood donation is a vital and life-saving act. Every two seconds, someone in the world needs blood, whether it’s for surgery, trauma recovery, cancer treatment, or childbirth. Donating blood helps ensure that hospitals and clinics have a constant supply to meet these needs.</p>
+        </div>
+    </section>
+
+    <section id="eligibility">
+        <div class="container">
+            <h2>Who Can Donate Blood?</h2>
+            <ul>
+                <li>➣Age: 18-65 years old.</li>
+                <li>➣Weight: Must weigh at least 50kg (110 lbs).</li>
+                <li>➣Health: Must be in good health and feeling well on the day of donation.</li>
+                <li>➣No recent history of infectious diseases.</li>
+                <li>➣Can donate every 56 days for whole blood donations.</li>
+            </ul>
+        </div>
+    </section>
+     <section id="ineligible">
+        <div class="container">
+            <h2>Who Cannot Donate Blood?</h2>
+            <ul>
+                <li>➣Have a cold, flu, sore throat, cold sore, stomach bug, or any other infection</li> 
+<li>➣Have had a tattoo or body piercing within the past six months.</li> 
+<li>➣Have recently visited the dentist for a major procedure.</li> 
+<li>➣Have a hemoglobin level below the minimum required for blood donation.</li>
+<li>➣Have AIDS or have ever tested positive for HIV.</li>
+<li>➣<u><b>Have had any of the following behaviors in the past three months:</b></u></li>
+<li>Used needles to inject drugs, steroids, or anything not prescribed by a doctor</li>  
+<li>➣Have taken medications to prevent or reduce the likelihood of HIV infection, such as PrEP or PEP. </li>
+<li>➣Weigh less than 110 lbs.</li> 
+<li>➣Are pregnant or breastfeeding.</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="donate">
+        <div class="container">
+            <h2>How to Donate Blood</h2>
+            <p>Donating blood is easy and safe. Here’s a simple guide:</p>
+            <ol>
+                <li>1.Find a local blood donation center or mobile blood drive.</li>
+                <li>2.Bring your ID and any required documentation.</li>
+                <li>3.Undergo a quick health screening and a small blood sample test.</li>
+                <li>4.Donate blood, which usually takes around 10-15 minutes.</li>
+                <li>5.Relax and have some refreshments to help your body recover.</li>
+            </ol>
+            <a href="register as a donor.html">Register to Donate</a>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3 class="faq-question">➣How long does the donation process take?</h3>
+                    <p class="faq-answer">The entire donation process typically takes about 30-45 minutes, including registration, health screening, and the actual blood donation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">➣Can I donate blood if I have a medical condition?</h3>
+                    <p class="faq-answer">It depends on the condition. You’ll need to consult with your healthcare provider or the donation center to confirm eligibility.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">➣Is donating blood safe?</h3>
+                    <p class="faq-answer">Yes, donating blood is a safe and monitored process. Blood donation centers follow strict hygiene protocols and ensure your safety throughout the process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>REACH US</p>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send?phone=919723708751"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:info@example.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://in.linkedin.com/school/itmbu/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/ITMBUOfficial"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/itmbu_university/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@itmslsbarodauniversity"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Blood Donation Initiative. All rights reserved.</p>
+    </footer>
+    <script>
+    // Open the form when the "Sign Up to Donate" button is clicked
+function openForm() {
+    document.getElementById("form-container").style.display = "flex";
+}
+
+// Close the form when the "Close" button is clicked
+function closeForm() {
+    document.getElementById("form-container").style.display = "none";
+}
+
+// Toggle the FAQ answer visibility
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', function() {
+        let answer = this.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
+</body>
+</html>
